@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang=en>
+  <title>Bücherbörse</title>
+  <head>
+    <link rel="stylesheet" href="../static/mainMA.css">
+  </head>
+  <body>
+    <div class="container">
+      <a href="{{url_for('login')}}" style="text-decoration: none;">Login</a><br><br><br>
+
+      <a href="{{url_for('registrieren')}}" style="text-decoration: none;">Registrieren</a><br><br><br>
+
+      <a href="{{url_for('meinkonto')}}" style="text-decoration: none;">Mein Konto</a><br><br><br>
+
+      <a href="{{url_for('upload')}}" style="text-decoration: none;">Artikel Hochladen</a>
+
+      <h1>Suchst du ein Buch?</h1><br>
+
+      <form>
+
+        <input title="Suche nach einem Buch" placeholder="Gib einen Titel ein" type="search" name="search_request">
+
+      </form>
+    </div>
+  </body>
+</html>

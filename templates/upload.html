@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Bücherbörse</title>
+  <head>
+    <link href="../static/login.css" rel="stylesheet">
+  </head>
+    <body>
+      <div class="container">
+        <h1>Mache Angaben über dein Buch</h1>
+        <form action="{{url_for('results')}}" method="POST">
+          <input title="Gib den/die Autor:in an" placeholder="Gib den/die Autor:in an" type="text" name="autorin_name" required> <br>
+
+          <input title="Gib den Namen des Buches an" placeholder="Namen des Buches eingeben" type="text" name="book_name" required> <br>
+
+          <input title="Sei ehrlich" placeholder="Gib den Zustand an" type="text" name="zustand_name" required> <br>
+
+          <input title="Gib den Preis an" placeholder="Gib den Preis an" type="number" min="0" max="100" name="preis_name" required> <br>
+
+          <button type="submit"> Hochladen </button>
+
+        </form>
+      </div>
+    </body>
+</html>
